@@ -89,8 +89,10 @@ import android.widget.TextView;
                     //button.setText(row+","+col+"\nTag:"+button.getTag());
 
                     button.setOnClickListener(this);
-                    button.setWidth(200);
-                    button.setHeight(200);
+                    final float scale = getApplicationContext().getResources().getDisplayMetrics().density;
+                    int pixels = (int) (100 * scale + 0.5f);
+                    button.setWidth(pixels);
+                    button.setHeight(pixels);
                     button.setTextSize(40);
 
                     tableRow.addView(button);
