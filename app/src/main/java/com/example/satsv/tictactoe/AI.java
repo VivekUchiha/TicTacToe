@@ -5,7 +5,7 @@ import android.util.Log;
 import java.util.List;
 
 public class AI {
-
+//a pull request from meiven for deltaday1 just a comment for checking
 
     int difficulty=3;
     private static int SCORE_WIN=10;
